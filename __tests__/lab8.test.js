@@ -1,6 +1,7 @@
 describe('Basic user flow for SPA ', () => {
   beforeAll(async () => {
     await page.goto('http://127.0.0.1:5500');
+    await page.waitForTimeout(500);
   });
 
   // test 1 is given
@@ -244,6 +245,7 @@ describe('Basic user flow for SPA ', () => {
   });
 
   // create your own test 20
+
   it('Test20: On third Entry page - checking <body> element classes', async () => {
     // implement test6: Clicking on the first journal entry should update the class attribute of <body> to ‘single-entry’
     const elclass = await page.evaluate(() => {let eltitle = document.querySelector("body").classList[0]; return eltitle;})
@@ -251,3 +253,6 @@ describe('Basic user flow for SPA ', () => {
 
   });
 });
+
+  
+
