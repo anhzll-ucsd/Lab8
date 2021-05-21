@@ -1,5 +1,5 @@
 # Lab8_Starter
-
+Angel Hernandez-Llamas
 ## Check your understanding q's (FILL OUT)
 1. In your own words: Where would you fit your automated tests in your Bujo project development pipeline? (just write the letter)
 
@@ -14,6 +14,6 @@ No, it seems complex and something that probably interacts with many other compo
 Yes, this element seems encapsulated to a specific area, the length of the message.
 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
-Our test will run as if someone would be interacting.
+Our tests will round straight through the command line
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
-
+    We would use history.pushState()
